@@ -1,38 +1,57 @@
-.App {
+body {
+	font-family: "poppins", sans-serif;
+	background-color: rgb(34, 32, 32);
+	color: rgb(238, 236, 236);
+}
+.container {
+	width: 90%;
+	margin: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titlePlaylist{
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cardPlaylist {
+	width: 200px;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: #e9ecf0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cardPlaylist img {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.cardPlaylist, h3 p {
+  color: rgb(34, 32, 32);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.albumName {
+  font-size: 16px;
+  height: 60px;
+}
+
+.btnSelect {
+  border-radius: 5px;
+	border-color: 1px solid #e9ecf0;
+	padding: 10px;
+	width: 100%;
+	font-family: "poppins", sans-serif;
+	color: #e9ecf0;
+	background-color: #ee6c4d;
+	cursor: pointer;
+	pointer-events: all;
+	font-weight: medium;
+	border: none;
+  background-color: #2b2e2e;
+	color: #e9ecf0;
+}
+
+.trackList{
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
