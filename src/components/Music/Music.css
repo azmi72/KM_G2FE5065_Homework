@@ -1,0 +1,17 @@
+
+
+.Tracks {
+    text-align: center;
+    
+}
+
+.Tracks img {
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 16px;
+}

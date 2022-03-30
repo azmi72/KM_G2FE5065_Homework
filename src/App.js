@@ -1,23 +1,33 @@
-import "./App.css";
-import data from "./data.js";
-import Track from "./components/Track";
+import { Component } from 'react';
+import Search from "./pages/Search";
 
-function App() {
-  const trackList = data.map( (track) => (
-    <Track
-        key={track.id}
-        url={track.album.images[0].url}
-        title={track.album.name}
-        artist={track.album.artists[0].name}
-      />
-  ));
-  
-  return (
-    <div className="container">
-      <h1 className="titlePlaylist">Playlist Music</h1>
-      <div className="trackList">{trackList}</div>
-    </div>
-  );
+
+class App extends Component {
+
+  state = {
+    access_token: "",
+    token_type: "",
+    expires_in: "",
+    state: "",
+    error: ""
+  }
+
+  handleToken = () => {
+    window.location.href= `https://accounts.spotify.com/authorize?client_id=b8b796d897ba407696d6e662c07e38f9&response_type=token&redirect_uri=http://localhost:3000&scope=playlist-modify-private`
+  } 
+
+  componentDidMount() {
+    this.setState({access_token: window.location.hash.split("&")[0].split("=")[1]})
+  }
+
+  render() {
+    return (
+      <div className="App">
+        {this.state.access_token !== undefined ? <Search token={this.state.access_token}/> : <button onClick={this.handleToken}>Login</button>}
+      </div>
+    );
+  }
+ 
 }
 
 export default App;
