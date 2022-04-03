@@ -1,6 +1,8 @@
-import { Component } from 'react';
+// import Home from "./pages/Home";
+import { Component } from "react";
 import Search from "./pages/Search";
-
+// import Search from "./pages/Search";
+// import Search from "./pages/Search";
 
 class App extends Component {
 
