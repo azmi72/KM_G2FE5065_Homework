@@ -1,8 +1,5 @@
-// import Home from "./pages/Home";
 import { Component } from "react";
-import Search from "./pages/Search";
-// import Search from "./pages/Search";
-// import Search from "./pages/Search";
+import CreatePlaylist from './pages/CreatePlaylist'
 
 class App extends Component {
 
@@ -25,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.access_token !== undefined ? <Search token={this.state.access_token}/> : <button onClick={this.handleToken}>Login</button>}
+        {this.state.access_token !== undefined ? <CreatePlaylist token={this.state.access_token}/> : <button onClick={this.handleToken}>Login</button>}
       </div>
     );
   }

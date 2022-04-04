@@ -1,5 +1,6 @@
-import data from '../data';
-import Music from '../component/Music/Music';
+
+import data from "../data/tracks";
+import Music from "../component/Music/Music";
 import '../App.css';
 const Home = () => {
 
@@ -8,7 +9,7 @@ const Home = () => {
             <ul className="content">
                 {data.map(e =>
                 <li >
-                    <Music props={v}/>      
+                    <Music props={e}/>      
                 </li> )} 
             </ul>                                          
         </div>
