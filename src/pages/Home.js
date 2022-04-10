@@ -1,4 +1,4 @@
-
+import React from "react";
 import data from "../data/tracks";
 import Music from "../component/Music/Music";
 import '../App.css';
@@ -8,7 +8,7 @@ const Home = () => {
         <div className="App">  
             <ul className="content">
                 {data.map(e =>
-                <li >
+                <li key={e.id}>
                     <Music props={e}/>      
                 </li> )} 
             </ul>                                          
