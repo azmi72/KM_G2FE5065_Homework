@@ -1,8 +1,7 @@
-import React, { Component }  from 'react';
-import Search from "../component/CreatePlaylist/Search"
+import React from "react";
+import Search from "../component/CreatePlaylist/Search";
 
 function CreatePlaylist() {
-    
     return  (
         <div>
             <Search />
