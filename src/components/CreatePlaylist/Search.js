@@ -34,14 +34,14 @@ function Search() {
             <Form SelectedQuery={SelectedQuery} setSelectedQuery={setSelectedQuery} className='formplaylist'/>
             <h1 className="heading1">Let`s find something for your playlist</h1>
             <form onSubmit={(event) => handleSearch(event)}>
-                    <input
-                    value={searchQuery}
-                    placeholder="Search something"
-                    className="input-search"
-                    onChange={(event) => setsearchQuery(event.target.value)}
-                    ></input>
-                    {/* <button className="btn-search">Search</button> */}
-                </form>
+                        <input
+                        className='input-search'
+                        id="outlined" label="Outlined" variant="outlined"
+                        value={searchQuery}
+                        placeholder="Search something" 
+                        onChange={(event) => setsearchQuery(event.target.value)}
+                        />
+            </form>
                 <ul className="content">
                 {Result.map(e =>
                 <li key={e.id}>

@@ -38,8 +38,6 @@ input {
     
   }
   
-  
-  
   .App h2 {
     color: rgb(61, 61, 61);
   }
@@ -78,6 +76,7 @@ input {
     margin-left: 30px;
   }
   
+
   .input-search {
     width: 30%;
     padding: 12px;
@@ -99,7 +98,6 @@ input {
     color: white;
     text-align: center;
     font-weight: bold;
-    /* box-shadow: 1px 1px 5px #272626; */
   }
   
 
@@ -131,8 +129,6 @@ input {
   }
 
 .playlistwrap {
-  /* width: 100%; */
-  /* height: 100vh; */
   display: grid;
   justify-content: center;
   align-items: center;
