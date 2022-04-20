@@ -1,4 +1,5 @@
 html {
-	background-color: #3a3b3c;
-	font-family: Calibri, sans-serif;
-}
+	background-color: rgb(30, 30, 30);
+	font-family: 'Times New Roman', Times, serif;
+	overflow-x: hidden;
+  }
